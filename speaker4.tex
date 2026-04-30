@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm
+}
+\usepackage{graphicx}
+
+\begin{document}
+\pagestyle{empty}
+\Large
+
+% ==================== PAGE 1 ====================
+
+% --- SLIDE 8 ---
+\begin{minipage}[t][0.45\textheight]{\textwidth}
+\textbf{\huge SLIDE 8 : Les Correctifs Blindés}\\
+\normalsize \textit{Temps: 0:00 - 1:10}\\
+
+\large
+\textit{(Transition : Prendre la parole après le Speaker 3 pour montrer la solution)}\\
+
+\textbf{Le script :}\\
+« Nous venons de voir à quel point une configuration par défaut pouvait nous exposer au danger. Alors, comment reprendre le contrôle et colmater ces brèches ? C'est l'heure de la contre-attaque. Sur cet écran, vous avez sous les yeux notre code Terraform "blindé", conçu pour créer une infrastructure vraiment résiliente.\\
+
+Si vous regardez l'éditeur au centre, nous avons appliqué cinq correctifs fondamentaux :\\
+- \textbf{L'accès public est strictement bloqué}.\\
+- Nous avons forcé le \textbf{chiffrement AES256}.\\
+- \textbf{L'accès SSH est restreint} à notre VPN (\texttt{123.45.67.89}).\\
+
+Enfin, nous avons activé le \textbf{versioning} et une \textbf{journalisation complète}. Nous avons maintenant des caméras de surveillance sur chaque action. Notre forteresse logicielle est construite. »
+\end{minipage}
+
+\vspace*{\fill}
+\begin{center}
+\noindent\dotfill\textit{\small \ \ Couper ici (Milieu de la page A4)\ \ }\dotfill\\
+\end{center}
+\vspace*{\fill}
+
+% --- SLIDE 9 ---
+\begin{minipage}[t][0.45\textheight]{\textwidth}
+\textbf{\huge SLIDE 9 : La Validation Trivy}\\
+\normalsize \textit{Temps: 1:10 - 2:10}\\
+
+\large
+\textit{(Transition : Cliquez sur la slide suivante. Montrez l'écran du doigt)}\\
+
+\textbf{Le script :}\\
+« Mais en cybersécurité, la confiance n'exclut pas le contrôle. Il faut des preuves. Que se passe-t-il si nous repassons notre radar de balayage, Trivy, sur cette nouvelle version de l'infrastructure ?\\
+
+Regardez le terminal au centre. Le résultat est sans appel, c'est un succès total : \textbf{9 tests passés, 0 échec}. L'analyse confirme que l'accès public, le chiffrement, les logs et la restriction SSH sont tous au vert.\\
+
+Zéro vulnérabilité critique. Aucune faille ne passera entre les mailles du filet. Cela signifie que l'infrastructure que nous avons codée est \textbf{techniquement validée} par nos outils de scan. Elle est prête pour affronter la production en toute sécurité. »
+\end{minipage}
+
+\newpage
+% ==================== PAGE 2 ====================
+
+% --- SLIDE 10 ---
+\begin{minipage}[t][0.45\textheight]{\textwidth}
+\textbf{\huge SLIDE 10 : Conclusion}\\
+\normalsize \textit{Temps: 2:10 - 3:00}\\
+
+\large
+\textit{(Transition : Cliquez sur la dernière slide. Regardez directement l'audience, ton plus posé)}\\
+
+\textbf{Le script :}\\
+« Pour conclure notre présentation, qu'est-ce que nous devons retenir aujourd'hui ?\\
+
+L'Infrastructure as Code (IaC) est formidable : elle rime avec efficacité. Mais un grand pouvoir implique de grandes responsabilités... Déployer vite, c'est aussi le risque de déployer des failles très vite. \\
+C'est pourquoi \textbf{la sécurité doit commencer dès la conception}.\\
+
+Les scanners automatisés, comme Trivy, doivent faire partie de votre pipeline. C'est en vérifiant notre code avant de le déployer que nous garantissons la résilience de notre cloud en continu.\\
+
+Gardez cette phrase en tête : \textit{« In Code We Trust, But We Verify »}. C'est ainsi que l'on construit un avenir maîtrisé.\\
+
+Merci beaucoup pour votre attention. S'il vous reste des questions, nous sommes à votre entière disposition ! »
+\end{minipage}
+
+\vspace*{\fill}
+\begin{center}
+\noindent\dotfill\textit{\small \ \ Couper ici (Milieu de la page A4)\ \ }\dotfill\\
+\end{center}
+\vspace*{\fill}
+
+% --- BLANK EXTRA ---
+\begin{minipage}[t][0.45\textheight]{\textwidth}
+\begin{center}
+\vspace*{3cm}
+\textit{\Huge (Espace vide pour annotations)}
+\end{center}
+\end{minipage}
+
+\end{document}
